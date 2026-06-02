@@ -1,0 +1,12 @@
+[project]
+name = "watch-the-tides"
+version = "0.1.0"
+description = "Example: pull and visualize Cal-ITP TIDES vehicle-location data"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.20.0",
+    "matplotlib>=3.10.9",
+    "pandas>=3.0.3",
+    "pyarrow>=24.0.0",
+]
