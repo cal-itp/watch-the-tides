@@ -138,9 +138,9 @@ def add_legend(folium_map, modes):
                 f'background:{color};margin-right:6px;border:1px solid #888"></span>{label}</div>'
             )
     html = (
-        '<div style="position:fixed;bottom:24px;left:12px;z-index:9999;background:white;'
+        '<div style="position:fixed;top:12px;right:12px;z-index:9999;background:white;'
         'padding:8px 10px;border:1px solid #aaa;border-radius:4px;font:12px sans-serif;'
-        'max-height:60vh;overflow:auto;box-shadow:0 1px 4px rgba(0,0,0,.3)">'
+        'max-height:80vh;overflow:auto;box-shadow:0 1px 4px rgba(0,0,0,.3)">'
         + "".join(rows)
         + "</div>"
     )
