@@ -9,8 +9,12 @@ wheels/
 # Virtual environments
 .venv
 
-# Downloaded data + generated outputs
+# Downloaded data + GTFS (large, regenerable, requester-pays)
 data/
-outputs/
-.ipynb_checkpoints/
 gtfs/
+.ipynb_checkpoints/
+
+# Generated outputs: ignore all except the two showcase artifacts
+outputs/*
+!outputs/vehicle_animation.html
+!outputs/pings_per_hour.png
