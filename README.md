@@ -10,6 +10,8 @@ Cal-ITP's public `gs://calitp-tides` bucket and visualizing it. It downloads one
 
 It's meant as a starting point if you want to work with Cal-ITP's TIDES data yourself.
 
+**▶ See it live:** https://cal-itp.github.io/watch-the-tides/ — interactive animation + chart, no setup needed.
+
 ## The one thing to know: requester-pays
 
 `gs://calitp-tides` is a **requester-pays** bucket. Every request must be billed to a Google Cloud

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>watch-the-tides — LA Metro vehicle locations</title>
+  <style>
+    body { font: 15px/1.5 system-ui, sans-serif; margin: 0; color: #222; }
+    header { padding: 16px 20px; border-bottom: 1px solid #eee; }
+    header h1 { margin: 0 0 4px; font-size: 20px; }
+    header p { margin: 0; color: #555; }
+    header a { color: #0061a0; }
+    iframe { width: 100%; height: 78vh; border: 0; display: block; }
+    .chart { padding: 16px 20px; }
+    .chart img { max-width: 100%; height: auto; border: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>watch-the-tides</h1>
+    <p>
+      LA Metro Bus &amp; Rail vehicle locations from Cal-ITP
+      <a href="https://tides-transit.org">TIDES</a> data — colored by GTFS line / bus service type.
+      Press play on the map. <a href="https://github.com/cal-itp/watch-the-tides">Source &amp; how-to →</a>
+    </p>
+  </header>
+  <iframe src="outputs/vehicle_animation.html" title="LA Metro vehicle animation"></iframe>
+  <div class="chart">
+    <h2>Pings per hour</h2>
+    <img src="outputs/pings_per_hour.png" alt="LA Metro vehicle pings per hour">
+  </div>
+</body>
+</html>
