@@ -14,7 +14,8 @@ data/
 gtfs/
 .ipynb_checkpoints/
 
-# Generated outputs: ignore all except the two showcase artifacts
+# Generated outputs: ignore all except the showcase artifacts
 outputs/*
 !outputs/vehicle_animation.html
+!outputs/all_bus_routes_map.html
 !outputs/pings_per_hour.png
