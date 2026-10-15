@@ -1,0 +1,180 @@
+{
+  "profile": "tabular-data-package",
+  "name": "tides_services_latest",
+  "title": "tides_services_latest",
+  "description": "Current-version cut of tides_services (`WHERE _is_current`). Exported to\nthe TIDES bucket at a stable path as the latest service reference\nsnapshot.\n",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Cal-ITP / Caltrans Data & Digital Services",
+      "email": "hello@calitp.org",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "data_000000000000-csv",
+      "path": "data_000000000000.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per service version."
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service. Join key from\ntides_provider_gtfs_data.service_source_record_id.\n"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Service name."
+          },
+          {
+            "name": "service_type",
+            "type": "string",
+            "description": "Comma-separated service types (e.g. fixed-route, demand-response)."
+          },
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "Comma-separated transit modes (e.g. bus, rail, ferry)."
+          },
+          {
+            "name": "operating_counties",
+            "type": "string",
+            "description": "Comma-separated counties in which the service operates."
+          },
+          {
+            "name": "fixed_route",
+            "type": "boolean",
+            "description": "Whether the service is fixed route."
+          },
+          {
+            "name": "is_public",
+            "type": "string",
+            "description": "Whether the service is public."
+          },
+          {
+            "name": "public_currently_operating",
+            "type": "boolean",
+            "description": "Whether the service is currently operating public transit."
+          },
+          {
+            "name": "public_currently_operating_fixed_route",
+            "type": "boolean",
+            "description": "Whether the service is currently operating public fixed-route transit."
+          },
+          {
+            "name": "operational_status",
+            "type": "string",
+            "description": "Operational status of the service."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    },
+    {
+      "name": "data_000000000000-parquet",
+      "path": "data_000000000000.parquet",
+      "format": "parquet",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per service version."
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service. Join key from\ntides_provider_gtfs_data.service_source_record_id.\n"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Service name."
+          },
+          {
+            "name": "service_type",
+            "type": "string",
+            "description": "Comma-separated service types (e.g. fixed-route, demand-response)."
+          },
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "Comma-separated transit modes (e.g. bus, rail, ferry)."
+          },
+          {
+            "name": "operating_counties",
+            "type": "string",
+            "description": "Comma-separated counties in which the service operates."
+          },
+          {
+            "name": "fixed_route",
+            "type": "boolean",
+            "description": "Whether the service is fixed route."
+          },
+          {
+            "name": "is_public",
+            "type": "string",
+            "description": "Whether the service is public."
+          },
+          {
+            "name": "public_currently_operating",
+            "type": "boolean",
+            "description": "Whether the service is currently operating public transit."
+          },
+          {
+            "name": "public_currently_operating_fixed_route",
+            "type": "boolean",
+            "description": "Whether the service is currently operating public fixed-route transit."
+          },
+          {
+            "name": "operational_status",
+            "type": "string",
+            "description": "Operational status of the service."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    }
+  ]
+}

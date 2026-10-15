@@ -1,0 +1,272 @@
+key,source_record_id,name,service_type,mode,operating_counties,fixed_route,is_public,public_currently_operating,public_currently_operating_fixed_route,operational_status,_valid_from,_valid_to,_is_current
+747c87ff5477aad955a7a6810825a0eb,recUY4YnRYmH1oRAI,Alameda Loop Shuttle,fixed-route,bus,Alameda,true,Yes,false,false,Deprecated,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e4ef68fec17a7b573e8c52748a86e1ac,recxLFq8itNO1zvng,Alhambra Senior Ride,"ADA paratransit, on-demand",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8664e8b6ec3bc637b7fddb35600d4d59,recoggDrYCYwsi526,Antelope Valley Dial-A-Ride,"ADA paratransit, on-demand",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+57d25ed085073bf1cb0c1ac440bb4d3c,recdo1bRag3fSsFft,Arcadia Transit Dial-A-Ride,"ADA paratransit, on-demand",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ebe860c1d9d1af5709b2f75c1c01f885,recq6KK2iVtRQRSkV,B-Line Dial-A-Ride,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+9297a2d69bc1f979c9d6370da91eda93,recwqQbkeOklpT4F1,B-Line Paratransit,"on-demand, ADA paratransit, reservations",bus,Butte,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fee3a53b966f369ceb2cd8cdab5ede78,recUbiSFlmqHfThbf,Banning Connect Dial-A-Ride,"ADA paratransit, on-demand",bus,Riverside,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+209c0fbd0f35cf8f40e93c15e921620d,reccgD3aZqVU6PVxa,Beaumont Pass Dial-A-Ride,"on-demand, ADA paratransit",bus,Riverside,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d369e34da70e56ae79e553f54b5a8851,recQjagxtQJqs0u6B,Burbank Bus Senior and Disabled,"ADA paratransit, on-demand",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bd85295ac27825edb47ab762e4c25427,reciQaJ0Ki731oW3k,Caltrain Shuttles,fixed-route,bus,San Mateo,true,Yes,false,false,Deprecated,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+cc2e39271b9f3b972f44da947d6e0960,recRPpR0WktgGK4LE,City Coach Paratransit Services,ADA paratransit,car/van,Solano,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+81ca875386a0fc3bcd55c8eca5f34d2f,recmixeIoa7LSZiWV,Cityride Taxi,"on-demand, reservations",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+40137fd68ae2544c6fe510a5c9859f1e,recN2hQWPIGxvlNZs,Clovis Transit Roundup,ADA paratransit,bus,Fresno,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+686edd3df8b2db6b507fb1cd1431d76e,recuEm0xaOYxwP06Y,Commerce Dial-A-Ride,ADA paratransit,bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+6f98302489a92ddd98fd118de6373873,recYsvx7DkS5iAFe5,Culver City Dial-A-Ride,ADA paratransit,bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+538f3d35231363c873de459e56b8a475,recQI2fT5wt37ZHip,Culver City Taxi Coupons,"on-demand, reservations",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+02668f7c02061de203d262d5fcb6103c,rec9yvy8FmtSjUT8l,Dana Point Senior Shuttle,on-demand,bus,Orange,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b9ceb6989153739a1fcf07348eae2828,recHSwSTvVwhvudhD,Desert Road TRIP,ADA paratransit,car/van,Riverside,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+6baed6b70b5f4ca7a54a7f7b21e0167d,recPi4cuvEVkCotcU,Downey Dial-A-Ride,"on-demand, NEMT, ADA paratransit",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+74f9c2ad246ef7d765b4779ffefc45dc,rec88fHkC9OVPvvEA,ECTA CONNECT City-to-City Dial-A-Ride,"on-demand, ADA paratransit, reservations",bus,Ventura,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0fda4a4156546d91a91cbd58d6e78daf,recf5dnqNj270SEk4,East Bay Paratransit,ADA paratransit,bus,Alameda,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+06399aeab1ab90336660b0c9fc6b3e6f,recUFNZROi5RJpWWE,Eastern Madera County Medical Escort Van,NEMT,car/van,Madera,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5e7b049f6424e65f998c8585f56fadb7,recaOF6qqER6FRuoM,Eastern Madera County Senior Bus,"on-demand, ADA paratransit, reservations, NEMT",bus,Madera,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+34dc2e3e50731f1189bfe2679913b919,recsnrqJXD6Bu3qB7,Eastern Sierra Transit Authority ADA Paratransit,ADA paratransit,bus,Inyo,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+6b20e872b58a2d488099a26e7ec5e807,recyt5mmJIC0tosjd,FAST Connect ADA,ADA paratransit,bus,Solano,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ceef36faf094d0c1b84c62b1f0bdc382,recgi9DXIqyI2D2Qk,FAX Handy Ride,ADA paratransit,bus,Fresno,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1e3e1ede5e37fc92fc8c3280a94915fd,recrXBi0XSN7rd1gk,GET-A-LIFT Paratransit,"on-demand, reservations, ADA paratransit",bus,Kern,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+33e9e97a370e0928fda35c0c2ae0165d,recfwbkZvCsU94I20,Golden Gate Transit Paratransit,ADA paratransit,bus,"San Francisco, Marin, Sonoma",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a374ab4ca7375fd5a8785bd28f42a046,rec51sss0RooL1MbF,Humboldt Transit Authority Dial-A-Ride,"on-demand, ADA paratransit",bus,Humboldt,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ffc9d02c8bbf91855d1d4d0aa4a8dd6d,rectj5PhSII96ZCPx,Iride Inglewood,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+87994bb91799bc05e588d049b95cd986,rec0g3hO1nwnMtleB,Irvine TRIPS,"on-demand, NEMT, reservations, ADA paratransit",bus,Orange,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+9137c4c243885408ef8b039242ae9535,recnKs5G2iVpUsMvO,LAX ADA Shuttle,"","","",true,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c58781bf0e60c7eafcb82b04d7b83d37,recKeImngBZSxwsgx,LAX Automated People Mover,"","","",true,Yes,false,false,Planned,2026-10-05 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b21c016700377ffa62126fb75331786c,rec2OXgK1h9mMxLSI,LAX Employee Shuttles,fixed-route,bus,"",true,No,false,false,Operating,2026-10-07 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e863d2ec67b1dd24796fbd36e6be550e,recR4pjC99QpK5akP,LINK Paratransit,ADA paratransit,bus,Contra Costa,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5b14f00d4e0a9578bffc5233a38ace2d,recpOMMly6rOyqvNc,Long Beach Demand Response,ADA paratransit,bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bd7a852c08252e8ebef22cd094ce4da0,recUUPQOLQK8vN7IE,MST Demand Response,ADA paratransit,bus,Monterey,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d2f4638100f8d4e74ebedc2d484a6b55,recsrhDGNUzasNYwg,Madera County Connection Senior Bus,"","",Madera,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+366100e9622a031844e7d8ae4f045d3c,recx3pgre3TLd0xXg,Mendocino Transit Authority Dial-A-Ride Ukiah,"ADA paratransit, reservations, on-demand",bus,Mendocino,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7b5ab4bad6ddeb1cb06621150db2e445,reciprPzP7NRBJPpC,Merced Paratransit,on-demand,bus,Merced,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4f737477cf57b1223c6b40b22c2a5c72,rec1oAa8a8ELfEYKo,MoGo,on-demand fixed-route,car/van,Santa Clara,,Yes,false,false,Deprecated,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f5cf3e6e8d635005fb6bdc74a56b6ba7,recgMpBI9AmbeS1gQ,Mobility on Demand Everyday,"on-demand, NEMT",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+62da725d3fc06d4ec98d9d25c5b862e9,recBNqYfwHfb1rpVP,Montebello Dial-A-Taxi,"ADA paratransit, on-demand, reservations",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+030966527c9fc37d23142a500a08920b,rec74kmC0mKydhzbg,Monterey Park Dial-a-Ride,"ADA paratransit, on-demand, reservations, NEMT",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ff95afb42b72934250c30f216741f729,rec3xTjKRIEVKZOvV,Moorpark Dial-A-Ride,"ADA paratransit, reservations, on-demand",bus,Ventura,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b24c0329c033b7d08bff4b90cf92a4ef,rece7QkrnEwpFrj6P,NCTD LIFT,"ADA paratransit, reservations",bus,San Diego,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0143f45d357664f82983a5e25b4787ca,recyz5MGPFBwBki5q,Nevada County Now,"ADA paratransit, on-demand, reservations",bus,Nevada,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2f840bded5b7d20fb32aae1fd50e41b9,recIebesZIlAkciOC,Norwalk Dial-A-Ride,"on-demand, ADA paratransit",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+aca1cae8602c8e64552dd62f67ad3273,recugHiuhw01lzMdg,Norwalk TaxiCard,NEMT,car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+385f7d0cb0e3f5e17c95a48fe0b02796,recSmHmTxJsJ1jvwh,OC ACCESS,on-demand,"","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+41ba5048ff8e51a5973840fbe5bcc00e,recXVt5KTOCFvRPom,OC Flex,on-demand,bus,Orange,,Yes,false,false,Deprecated,2026-08-07 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7be14ca3ee53b306d223dfd2f5c7305c,recfa3G660t6BW16R,OC Streetcar,fixed-route,trolley/streetcar,Orange,true,Yes,false,false,Planned,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f21762c80b98881754510312b3150d1c,recFmDlX7dlmc45Uh,ParaTRAX,"on-demand, ADA paratransit, reservations",bus,Tehama,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ba1a78d0a96ca9465536024a9f9393f0,rec3B8poy9I1MxbDu,Pasadena Dial-A-Ride,"ADA paratransit, on-demand",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+59d9f29868dbdd84a9314ca0baad43de,recPXOq3CuCFOWkDh,Petaluma Paratransit,"ADA paratransit, reservations",bus,Sonoma,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1392014fa1b25f798592bab94d10ba92,recxLvmg1ta9obbin,Redding Area Paratransit,ADA paratransit,bus,Shasta,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f1410db96da549f053773bbf4e4d604b,recNCZpDoek8M9TrC,Redwood Coast Dial-A-Ride,ADA paratransit,bus,Del Norte,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fca0a822b5d2856cb7e88345362f8a3d,recDqbeGzc4BodXRS,Riverside Transit Dial-A-Ride,"ADA paratransit, on-demand, reservations, NEMT",bus,Riverside,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d1c88fae38502695a3a76e40b1665ccc,recNrDVY6D1AiWm7s,SacRT Go Paratransit Services,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+9518cfc8e7098437c5aca305f9b5ffa2,recTWJykDm0JIJ4oV,SacRT e-Van,ADA paratransit,car/van,Sacramento,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+503796d658b715d4557babefcb60cdbf,recYqUUxWzFEM2RYQ,SamTrans Paratransit Redi-Wheels,"ADA paratransit, reservations",bus,San Mateo,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+96f81f0a12434307711b50cf04836ef7,recfUsTYjey2IOMTB,San Clemente Senior Mobility Program,on-demand,bus,Orange,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4952a36ce6dd3978c71a14c94b1a55ea,recu0Ii7AOcxrO9ch,San Joaquin Regional Transit District ADA Complementary Service,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+91dfbb3fe6a376386fb28f8ef5b35c6c,recuAsAHXMiNuDLIw,San Luis Obispo Regional Transit Authority Runabout Paratransit,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b94ab1b70ffd158c5a779fad938a61f7,recrGjG0KZuJcJf7y,Santa Maria Paratransit,ADA paratransit,bus,Santa Barbara,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1b334f052d923bb981f0d51450227984,reczQuFm8SBFxXYah,Santa Maria/Orcutt Senior Dial-A-Ride,"on-demand, reservations",car/van,Santa Barbara,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f34dd147c027e9db2869d7872fadde6c,recRQE6Y11xCNjgSt,Santa Monica College Intercampus Shuttles,on-demand,car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8e3c09d071763d7eff6be6f33ef92ccf,reckkzsC74kpXS81M,Santa Rosa Demand Response,"on-demand, reservations",bus,Sonoma,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0e26c9a780c0b387b4ab633928531514,recJh282Fpkbbsrz1,Simi Valley Paratransit / Dial-A-Ride,"ADA paratransit, on-demand, NEMT, reservations",bus,Ventura,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f28a4f8cbf61ead8670b40be11f11aab,recHEmSnmPd7Z2DVt,SolTrans ADA Paratransit,"ADA paratransit, reservations",bus,Solano,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0028444e1fddf419f2c97725f79c6677,recdBI8UHnnPSMZ2y,Sonoma County Paratransit,"ADA paratransit, reservations",bus,Sonoma,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+76a1ca456a52a5cd6ca04b0dd5f8408d,recvCCTtETMbQb7mX,SunDial Paratransit Service,ADA paratransit,bus,Riverside,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d050d358ed4943463837b034aef5cba3,recp54etUiG02YpqN,TRACER Paratransit,ADA paratransit,bus,San Joaquin,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0d031daa9ac6469b4dfd84d46d042a11,recjd7vnKhqNONVLi,Tahoe Transportation Paratransit,ADA paratransit,bus,"Placer, Nevada, El Dorado",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2ab14bc301f6994bda66a0f623ce6b9e,reczCUhrwPM0Ni8Ba,Thousand Oaks Dial-A-Ride,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c85640ec5511cd02c533d7be0024e4c9,reckMinoYUGjVAoWR,Torrance Community Transit Program,"on-demand, NEMT",car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e4b879c8d50c8644cc524a3d9c2f6833,recNNP5FWOuDALpQ0,Tri Delta Transit ADA Paratransit Service,"ADA paratransit, reservations, on-demand",bus,Contra Costa,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2ce6422bb5f33b20c2338130a78fde71,recHHG3L1y3CinYX9,Tri Delta Transit ADA Senior Paratransit Service,"ADA paratransit, reservations, on-demand",bus,Contra Costa,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bccac31d30c02e0ebf0c74f59bf4b10b,recwNpvO847zuiNN7,Trinity Transit ADA Route Deviation,"","","",,No,false,false,Operating,2026-10-05 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ed049772824bf8c4f7d6b43ecd1a8be1,rec9LEB6ESYObjfqT,Tulare County Regional Transit Agency Paratransit,on-demand,bus,Tulare,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1e5e6ff56c06f5e9ae415c5046668a81,recPGYHC1kdJ3CPV7,Turlock Transit Dial-A-Ride,"on-demand, ADA paratransit, reservations",bus,Stanislaus,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+aa89c09908189f77f40c62545fc2112e,reckCoMPth77I9MUs,UC Davis Health MedTrans,"fixed-route, on-demand",bus,Yolo,true,Yes,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7a8cf3e6fc8c1bb41e559cfaf4fa6f01,recDb7VjNGHN3MfCm,Union City Paratransit,"ADA paratransit, on-demand",bus,Alameda,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+45d268c6ae68a045f0c2957b06318b52,reczQ6renxrK2Ds3W,VTA ACCESS,ADA paratransit,"bus, car/van",Santa Clara,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3cb0789d665c193f53659ee988d31f7f,recfoRHagQnzNEiBD,Valley Express Dial-A-Ride for ADA Paratransit Riders,"on-demand, ADA paratransit, reservations",bus,Ventura,,No,false,false,Operating,2026-08-10 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+73c7c3cfff5e099557fe6ef1df047c51,recqu5YOKFUhXr4w7,Victor Valley ADA Direct Access,"ADA paratransit, on-demand",bus,San Bernardino,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ab477ffd74dae7a79d250ffb35817f5a,recKF8MOgkekt5PPu,VineGo Paratransit Service,on-demand,bus,Napa,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ddf013e82067e4a7756f45ed74d0128f,rec0pbBiqRHgJteDK,WAVE Dial-A-Ride,"ADA paratransit, on-demand",bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ab28603da9f90d83c4f03adcada601ab,recgEP6IBYP3Jg0El,WeHo Cityline Dial-A-Ride Flex,on-demand,bus,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0e512a8d05a599f32efff2708aeb933b,recwoiyjiI12bthDi,West Hollywood On Call Transportation,on-demand,car/van,Los Angeles,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7c80836d129c673860b3b865c64ba08c,rec78JW9I6Wt3lYFr,WestCAT ADA Paratransit,"on-demand, reservations",bus,Contra Costa,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+567dc5ffe48e5ca55ef767ce08b4169e,recoelf0kbhNcYV92,WestCAT Senior Dial-a-Ride,"","","",,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+52cb00a550faead53ed7290d18753560,recw1I5d6rudMYgjA,Wheels Dial-A-Ride,"on-demand, ADA paratransit",bus,Alameda,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c11d9cb7fd5efac6168398df91af804a,recuz6HXHYaHjNkJL,Yolobus Special,"ADA paratransit, on-demand",bus,Yolo,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+00c3037e3e566cec05d0d19eb0b65c43,rec1qWWvvreXLNDdq,Yuba-Sutter Dial-A-Ride,"on-demand, reservations, ADA paratransit",bus,Yuba,,No,false,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+95425bdb2ec6f810e8ab8add79488ff1,rec2928Gmth57QQkb,AC Transit,fixed-route,bus,Alameda,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+77cfcc15b722894a1b7950b2d2668d4f,recMz98YiC93iDvNu,Alhambra Community Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ee491f1546f8e0a3389579fc93d324a1,rec0xnHrKjJMoUUq0,Altamont Corridor Express,fixed-route,commuter rail,San Joaquin,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+84ac8ce5b3e9c813477ae889ce92d922,recX9S5dXIgHWb3D0,Antelope Valley Transportation Authority,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+73bbefa1859a1df5f577873a1a7a9996,recy5ycBYnMDo2Mon,Arcadia Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4adf1ff93b312f98fb118fe50fbaa1a2,reczSSNT9Jie0e7SK,Arcata and Mad River Transit System,fixed-route,bus,Humboldt,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+9041a00eee75f7c5a8c5b73bc8e95f5d,recHm8mtLO8q4ZOeg,B-Line,fixed-route,bus,Butte,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b269de06dbf4e12a0e9788672f29c4f5,recueL8KuvQoqWONW,Baldwin Park Express,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b330442e38bcab039420cef956749177,recZfsHppToLdkBbg,Baldwin Park Transit Dial-A-Ride,ADA paratransit,bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8226cc060067b0acee1c8ac170b243fc,recfVrO0e0ViJky3S,Banning Pass Transit,fixed-route,bus,Riverside,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2eba9f42e03b890a173a9538e111ce07,rec93XoOaGgVTcWiT,Basin Transit,fixed-route,bus,San Bernardino,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+436f88770bfd15769fbf1d531277ae62,rec9Q4KTYtCGjy37c,Basin Transit Ready Ride,"on-demand, reservations, ADA paratransit",bus,San Bernardino,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+eea0a7725aa6a0e7c86ea58f8e998639,recFPaytFBhf5jNmo,Beach Cities Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3db1f94c0da44764342efb034c4701a0,recAFLd7iQQTr5uqr,Beaumont Pass Transit,fixed-route,bus,Riverside,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ded1187eee9df0d1c74eababca2a5f98,recXW1RNDyWCERTJ1,Big Blue Bus,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+171630d6c514a988ca81f89b6b975974,recWUemMtvdfyA0tP,Burbank Bus,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+12675a99e5c844b3a108099a28dd4c19,recFFwRfkXJ2BaUp5,Caltrain,fixed-route,commuter rail,San Mateo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+40ec43e233fc18266e1aaeda890d0ad3,recq4QPGNpJCc01z1,Camarillo Area Transit,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+11bc2dbfc76febab4404234519b8c19a,recUTWvaWKPppFIrZ,Camarillo Dial-A-Ride,ADA paratransit,bus,Ventura,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+100009b6c76e0f8759b54352aa61bfc4,recULGc0PomPDTJbW,Capitol Corridor,fixed-route,intercity rail,"Alameda, Solano, Sacramento, Yolo, Contra Costa, Santa Clara, Placer, San Francisco",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c0db95b65e7515d69e3abc95b01a5efd,recPZ51UbrtlvCM7E,City Coach,fixed-route,bus,Solano,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+97908fcca15e9cffa77ab8ef48c4a811,recXHlERbDzAhBPzk,City Coach Direct,ADA paratransit,car/van,Solano,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5cdbb14eccc705ebb97c9c4ab833cc50,recLoiArpzTc5LeM8,Cloverdale Transit,fixed-route,bus,Sonoma,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+dfa9f9aba2c6b321a9b5ff5dee54db57,recGYl7CoYON7V2o7,Clovis Transit Stageline,fixed-route,bus,Fresno,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5c007756f8f8ec4cea1d7e6e809c5b97,recDeoYr1NbtQ11vD,Commerce Municipal Bus Lines,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f1853d571a2b4efab624f818295638d9,rec4U0kdY7Mm82sIM,County Connection,fixed-route,bus,"Contra Costa, Alameda",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e9e9bc7b5914eb00ea674f4d32f1aeb7,recEz6OrISnkTl3iU,Culver CityBus,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+039102858a7ab18dcbc89f8092380669,recXhJlHUJHTM5HPu,Dana Point Trolley,fixed-route,"","",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+47282d56e888f8bc5842879235e4a8d0,recYech25nCvI2cV5,Desert Roadrunner,deviated fixed-route,bus,Riverside,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b59ed9869012215780b623fbd09a9e9f,recobnq0gxQ9FmOkU,DowneyLINK,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0cd2c599618c61326a16f481ed346955,recbqtQCOfavQTsPS,Duarte Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b7be1c9bc9be9da15cb11c8305a3a51f,recqNKTEdffwuHio6,Dumbarton Express,fixed-route,bus,Alameda,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+69bc64213bd24e7ea66ca98060071f62,recb73Kf4Q29rFvqT,Eastern Sierra Transit Authority,"","","Inyo, Mono",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0e7e3024d4dc8d2b33fc933bf3cb8e02,recty2OYcsWAtIZqD,Eastern Sierra Transit Authority Dial-A-Ride,"on-demand, reservations, deviated fixed-route, fixed-route",bus,Inyo,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7fa45a87f07107c61e524dd2db4def99,recMT9E5RKDi3UaVJ,Elk Grove Transit Services,fixed-route,bus,Sacramento,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a65f6fe3af2ba00aa89da959d57d3401,recutuejiY68XyALt,Eureka Transit Service,fixed-route,bus,Humboldt,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+75a80d0f2649ffa606d1356aa7424ca1,reczOCcJ4cgy9fN5r,Fairfield and Suisun Transit,fixed-route,bus,Solano,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+717484bab3ea222dad7918ebcc87f874,recC0e0wSazvTBx2W,Foothill Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5f9591b1bdf18049c6eb066a8d6ffebb,rectu8WhjUNN32WEt,Fresno Area Express,fixed-route,bus,Fresno,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d247ca35f50cd679f912a31d7c277ae8,recWgPE28QekQokUz,GET Bus,fixed-route,bus,Kern,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+09cc3e415998e0cafdee293bdd828473,rececnPHVwkoxEnKr,GTrans,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0245ade57717153b6c3187b5035c9024,recpasLSIWrmTE8e0,GTrans Special Transit,ADA paratransit,bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+6f753363bbdcbd50819307145d907459,recTnHMyggDcjmF9N,Go Tri-Valley,on-demand,car/van,Contra Costa,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+84c27892da3b12b481b7225c237ed468,recMDJq3HcxkbYjNK,Gold Coast Demand Response,"ADA paratransit, on-demand, reservations",car/van,Ventura,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2cf6e133d0d1d5a0847ce544e7b58930,recErPAXaGR8WtjLR,Gold Coast Transit,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+dd1cd33f55ab40bb32262d31377c3c56,recsWgBAAFM3j7Xim,Golden Gate Ferries,fixed-route,ferry,"San Francisco, Marin",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8bb694d62f605a542088f933bd162575,recQIkCOUCvPQcmSb,Golden Gate Park Shuttle,"",car/van,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fb4692d961ead675e7ded0d50938c09f,recHWvviLY88ca1WD,Golden Gate Transit,fixed-route,bus,"San Francisco, Marin, Sonoma",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+78e5270aaa4a33b83dc83710c1479ede,rec2uWvcBxiz93uQi,Humboldt Transit Authority,fixed-route,bus,Humboldt,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3409cb1c7f021d22d8ec2c6af61c1917,recC7G2WRzjkAN22t,Irvine CONNECT,fixed-route,bus,"",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+76b1c9087ab379cf480d077cf51ca562,recLj2NdCBBx8ZuKz,KART,fixed-route,bus,Kings,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fbba83f64d9c96dea0593cf0d9325ca7,reclzKNQFmyg3zmd4,KART Demand Response,"ADA paratransit, reservations",bus,Kings,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+596ed11923f910c416464d53e0a25d02,recerP7m633Uw5v4z,Kern Transit,fixed-route,bus,Kern,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e722707abde4ccf257f0f9cf5ecbb435,recVGVlWZd7NCFBKv,Kern Transit Demand Response,"on-demand, ADA paratransit, reservations",bus,Kern,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e9a7acd1584eed5483cc92b7e18007d7,recOanOIjAg9uoDN3,LA DOT Demand Response,on-demand,bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+81eb080ccef731cc23922b0a08109cc5,recZi8sngoKH9jqKZ,LA DOT Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+84f71da0e48f9b0e5732ea99d5e1e91d,recOPypTqsF8F2XN2,LA Metro Bus,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+08e6e4680614589b4b1bd48022a0ada6,rec826JBFZjflAsth,LA Metro Micro,on-demand,bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7ed6f0caf8971a7a7853608b9a13d673,recIm286vfb9yLOMp,LA Metro Rail,fixed-route,heavy rail,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e2f950577df2178d49a985f9bad65e24,reciO6SbhvkukqejF,LA Metro Special Events,"","","",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+17828c64cfa05ffd807eeb1879546156,recFt9ewMY8il5jdO,LAX Fly Away,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0c14f134602cbd3e38d7a5531350f9d7,recEfdNMI6KxgGtom,LAX Shuttles,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+74f6c4faa624101bc6bf798502995cfa,recckFzZtP2yMNbGb,Lake Transit,"deviated fixed-route, fixed-route, ADA paratransit, reservations",bus,"Lake, Mendocino, Napa",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+60bd23081e3d989db61ef5ffcc39a63c,recB5bmP8aNzuTi3z,Lake Transit Demand Response,"on-demand, reservations, ADA paratransit",bus,Lake,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+73714a40e20021a93163d565a04ebfa1,recGgfXFNDExd5UvT,Lawndale Beat,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+750fbcbabe8067151c8db9521ea0f1bb,recdvjj3dJVM7g7K7,Long Beach Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+08b09f790117c931921bfae220487c36,rec4xLfuGtCQ5kwrI,Long Beach Transit Water Taxis,fixed-route,ferry,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7b05193f70449c3636a02b6770cb95c6,recucuzNTxcn2tYU4,Madera County Connection,fixed-route,bus,Madera,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fa61c36e4c479054b1744334458f2cb5,recKCwpuuP5WrxvjK,Manteca Dial-A-Ride,"on-demand, ADA paratransit",bus,San Joaquin,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+22fac325a0cb8cd2307c8705d5cd7c64,recsh1kM8wvLLjXS3,Manteca Transit,fixed-route,bus,San Joaquin,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+011f063bc65e77edf9321a7cf84c98d2,recub3E01v5DjPVSx,Marin Transit,fixed-route,bus,Marin,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fc574670fab1de577e0e4febad866f20,recBBUyH1nTzLZ3oL,Marin Transit Demand Response,on-demand,car/van,Marin,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+cf2119464adb96e920a7f6a9bf5efb61,recvjutTt9bpQThju,Mendocino Transit Authority,"fixed-route, deviated fixed-route",bus,Mendocino,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b8cec77e23a9a1e1a002f07139cda6ce,recgYJoHe73RzltzI,Mendocino Transit Authority Dial-A-Ride Ft. Bragg,"ADA paratransit, reservations, on-demand",bus,Mendocino,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bbf4ce2cdbf02416240ed545eef199f6,recS2qxFa1ZGLIdIA,Merced The Bus,fixed-route,bus,Merced,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3e316b9f17a0d8194eb0be5aaeba8fb5,rech5CJJQ1MGuh6Xr,Merced The Micro Bus,"","","",,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3111930747355f8d783c49aae688037d,rectPRnKoOZIpOEpS,Metrolink,fixed-route,commuter rail,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a961720c2e482e72f778eb54627efccd,recZApUjhcjA8IQqw,Milpitas SMART,on-demand,car/van,Santa Clara,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fab4e1885e58a617d5399dabf71a7dbe,recA430KPbPz6pxv9,Montebello Bus Lines,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5ad8642ac4fa375c10127124a3b34a4b,recHCKUTWlIMnCKNY,Montebello Link,"deviated fixed-route, reservations",bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5baf4d9603a3bc97fb3d4807a605a5c6,reczkKlf7K9oUQXiL,Monterey-Salinas Transit,"ADA paratransit, fixed-route",bus,Monterey,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bcc9212abbed10df61dd8a9cf1590ba9,recNEYP6c6SZF3LXB,Moorpark City Transit,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+db69d657071f0d71187b9c528cbf4cde,rec6YcdvzzWBOZgqp,Mountain Transit,fixed-route,bus,San Bernardino,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+6586883680e7baa42aa029904a3e1ea6,recc6JplcML1NnxzQ,Mountain Transit Dial-A-Ride,on-demand,bus,San Bernardino,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fcc63294fe4fb919c54fbeb57fddedea,recJ4XOJj06Mkffla,Muni Bus,fixed-route,bus,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+373777dde12cb3c9f04880337d912ad4,recl5UWS5A6LS8cbP,Muni Metro Rail,fixed-route,light rail,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4bfa9aa0821e353ffef940147e6942ae,recEh6oiAEbuqi6EP,NCTD BREEZE,fixed-route,bus,San Diego,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+de971c0f076802f4d4c92fb1d306d6d8,rec41pm56nwLzImgB,NCTD FLEX,"on-demand, reservations",bus,San Diego,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+99e9bdf1392a69d2b5d3fd2f03c32d5f,recR6xLGedA7z4YUF,NCTD Rail,fixed-route,commuter rail,San Diego,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f9097af59201057b2b13c9089de45d32,recgbVdL7La5rdtjn,Nevada County Connects,fixed-route,bus,Nevada,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a6fe90729c0fc11200d1a76ae45aedaf,recZxHboHzkjqkuOw,Norwalk Transit System,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+23a7a33e1521b4b70f270ea11e2ae79a,rec2Sc47UbtKb0QGr,Oakland Alameda Water Shuttle,fixed-route,ferry,"",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e87f0e46c124166f4431dfd9860242b5,recq7uSQX8Iu2Ail3,Ojai Trolley,fixed-route,trolley/streetcar,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5edb807274ba5ec4619d1c64f2d95d67,recLZoD0OLo9LYNeS,OmniTrans,fixed-route,bus,San Bernardino,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d352c7c84a7b255962bfd764dec32829,recTzmOEZnzZreO91,OmniTrans Demand Response,"on-demand, reservations",bus,San Bernardino,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+cca17695a4953650e5cc3294706f604b,recElXZ6Y3kUWCKkl,Orange County Transportation Authority,fixed-route,bus,Orange,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e56006cd8a8ccc3d86166e13bd5f08b7,rec6bJUsGWroeqodl,Pasadena Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a6578c4cfe5dedcaf5eadab91ce540f0,recYsaDnC9xlIqggJ,Petaluma Transit,fixed-route,bus,Sonoma,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d6c93bd6395eda083b9c669d98ba2760,recAM6553GOwqpZCn,Point Reyes Dial-A-Ride,"ADA paratransit, reservations, on-demand",bus,Marin,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+42caa2817556ddb194ee356741222033,recmdAc50ylp6TDxJ,Presidio GO Shuttle,fixed-route,bus,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+74b1544c5a27f5329701f28df5a944f0,recthtqJiccuHePry,Rancho CordoVan,fixed-route,bus,Sacramento,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5aaa40358bf335ce6f5b054b2cb05e61,recaaihvG2xMaGBDQ,Redding Area Bus Authority,fixed-route,bus,Shasta,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ad396424452967cf3b999a4caeb61436,rec3CI5dhsqli2iTS,Redding Area Roundabout,on-demand,car/van,Shasta,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7b64736d88c8d2364a4691e2b5fa3424,recJMlgqFIWApD7wF,Redwood Coast Transit,"fixed-route, deviated fixed-route, ADA paratransit",bus,Del Norte,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+49928fe56b0ec703616fb306081884ba,recG1W1V94dje5nrJ,Riverside Transit,fixed-route,bus,Riverside,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+d77d509207e0198881146e418a46b583,recg7wWk3nOO5esoX,Roseville Arrow,"ADA paratransit, on-demand",bus,Placer,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+10ae535746c653407ce2207ec10ae70c,recQQnf0eC70gs0ZE,Roseville Transit,fixed-route,bus,Placer,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e8b1d6278227ff634f5b8a98793f7188,recFdKYTamn57LnRu,SF Access Van,ADA paratransit,bus,San Francisco,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5fc4eb8978a61df22f5c4bd0376a19b1,recaAyturOpOavJOV,SFO AirTrain,fixed-route,monorail/automated guideway,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+de75756178ff29ad38fd572b89b9742b,recqCxZLorwY6Ln8e,SJRTD Demand Response,"on-demand, reservations",bus,San Joaquin,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2b48b44628e322b63566858a6ab23c8a,recMplTe3CnOARUYD,SLO Transit,fixed-route,bus,San Luis Obispo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1cca63ca6243df89f4aef580491dc85f,recd6oEGIsO30kgpw,SMART Connect,"","","",,Yes,true,false,Operating,2026-08-21 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1bffb9a05204e969eb9c1ea012d7667e,rec0CwvQmCzGrggH0,SacRT Flex,"ADA paratransit, on-demand, reservations",bus,Sacramento,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c6f0069217fddacdbbcfad63a11c887c,rec4ngaW4prJCvuQv,SacRT Light Rail,fixed-route,light rail,Sacramento,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0f4eff99c4a1c6fb7287f81492e51a04,recucpbla6cP2ZdsV,Sacramento Regional Transit District Bus,fixed-route,bus,Sacramento,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e2dbe667f0295b9df68a57257e01eb54,recTotuhMzf8cprwh,SamTrans,fixed-route,bus,San Mateo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5336cb2b0e8b4efcdadb82af569e02ff,recU53oAeNBwJtTt2,SamTrans Ride Plus,"on-demand, reservations","",San Mateo,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7d6a12711ba2a4455ee3b96ea4cc5617,recg0Sy5cqunBqWdh,San Clemente Trolley,"fixed-route, seasonal",trolley/streetcar,Orange,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+26dfedf19f5975b9fb7ecde0b950cab7,recrwkklZVuk57tIs,San Diego International Airport Shuttles,fixed-route,bus,San Diego,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+246f1a89427ad2c3f77bb6b58fb62e5a,rec3s5RB3XqvfQUYw,San Diego Metropolitan Transit System,fixed-route,bus,San Diego,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+0184eb65b47a3c61cc447af4bacce232,rec3XkgvLKoH5UVvf,San Diego Trolley,fixed-route,light rail,San Diego,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+c2d40a6adce58fb8fb59a0ba9e46b750,recRNpmjhgU3WafoQ,San Francisco Bay Ferries,fixed-route,ferry,San Francisco,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f0cbdc939ece7992f316a6b02a3dc748,recmeHYjUYxfWk0yp,San Joaquin Regional Transit District,fixed-route,bus,San Joaquin,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a582d3045507eb567084d3ce315e3a12,recEqjRoi6gYsqCCG,San Juan Capistrano Free Weekend Trolley,fixed-route,trolley/streetcar,Orange,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8bbafaf6389153c22d0ce3aebe44a14a,recK0My4JUzrJrueY,San Luis Obispo Regional Transit Authority,fixed-route,bus,San Luis Obispo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+cdcd61372b8a8375ea3e67266446cc2c,reciTDc6AEFmSW6aP,San Luis Obispo Regional Transit Authority Dial-A-Ride,"on-demand, reservations",bus,San Luis Obispo,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2bad2ac4cab47db484f183798b223cfd,rec98ufRhXlBgoLpE,Santa Barbara Metropolitan Transit District,fixed-route,bus,Santa Barbara,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+2f2863225af53e5e75b0324f51624e0f,recHVzQ6sPCwpAy7g,Santa Clara Valley Transportation Authority,fixed-route,bus,Santa Clara,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3d2eed5f2614001d8766ce81143295b6,reciDSxhmHtpucDWB,Santa Clarita Demand Response,on-demand,bus,Los Angeles,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e5da942baa91bd6e34c88fb8edb27e7c,recSNE5IgXBIinbYS,Santa Clarita Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4cfeb48d2677fb003f1d1e492c63f3d3,reckFqMdQFWmDlCYa,Santa Maria Regional Transit,fixed-route,bus,Santa Barbara,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+dfab85b95371b0ab60dce922a6d37837,recurY5FaBNnUDzeY,Santa Rosa CityBus,"fixed-route, deviated fixed-route",bus,Sonoma,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a3882c258269359b48e6bb393a27db50,rec0es9vxcDpyvJJA,Simi Valley Transit,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+ccfeab438df8c5414255885be6da2527,recOyqwhO50pnmZBv,SolTrans,fixed-route,bus,Solano,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3959ffc9198d34474cb992fdd29e2f00,reczuL8hmOE7qln7H,Solano Express,fixed-route,bus,Solano,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+dc1f7603e70410c0a99968dfba6fc4eb,recj9YFr2oMY3kBCe,Solano Mobility Programs,"on-demand, ADA paratransit",car/van,Solano,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e412741630658c0f9fb70602e8bd5aab,recqbfcW08gPFbECz,Sonoma County Transit,fixed-route,bus,Sonoma,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+3151e1507dfc21f5e9bc25090e358ce7,recDkAYqXxaogrsvu,Sonoma-Marin Area Rail Transit,fixed-route,hybrid rail,Sonoma,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f83b86d80cce9590dead8c41284f4886,reclv4EUWFDsjtnXy,Spirit Bus,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+99772f54a861bfc042c0fee24fffb93b,recL0YH0ymVAkfZ5h,StanRTA Demand Response,ADA paratransit,bus,Stanislaus,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b1e70b94fe98e7be74137eec2e5e90c0,recvdfShq16hpEgv6,Stanislaus Regional Transit Authority,fixed-route,bus,Stanislaus,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a81aee516dfc8761f06133426e65212f,recQpIbQOCWyd6Gd8,SunLine Transit,fixed-route,bus,Riverside,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+513b28f6b6d09e9ba1f97d2daf7ff915,recwnrAbKuk92J8Dm,SunRide,ADA paratransit,bus,Riverside,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8020c3b08ea96de44139f14a604bb3ee,recNAMlf5tUXVQxkk,TRACER,fixed-route,bus,San Joaquin,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4ed65c250066c9b8117282f588ad8ef0,recyJdtsJoK9Mj0V7,TRACER Plus,ADA paratransit,bus,San Joaquin,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8ea0cb108fd6ba6fb0c0065632362972,reczPYUgM4TnWlC76,Tahoe Transportation District,fixed-route,bus,"Placer, Nevada, El Dorado",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+8af182969e6acbbaf8838db614a8cb43,recBWKDKaz1DFucYK,Tahoe Truckee Area Regional Transportation,fixed-route,bus,"El Dorado, Placer",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1ac36d44dc0979bf299b3cfe20014fba,rec2p4GCgryZq3jqw,Tehama Rural Area eXpress,"deviated fixed-route, fixed-route",bus,Tehama,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+05de6a5d931caed419ac9223be5cc80f,recbQ5x4eQfVbhkEv,Thousand Oaks Transit,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+e2707b33a3710828f1380f3187643b0c,recCJRGnIhu2f5ddb,Torrance Transit,fixed-route,bus,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a4011a0027129045967084dd6804bea1,recmiu372RBid5LHN,Tri Delta Transit,fixed-route,bus,Contra Costa,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+48017d5c9da69020eb1771683e1ee1c4,receK0cEEnuqeTyAP,Tri MyRide,"","","",,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b07611fc2b154f4df830cfbbad6bbc3c,recCo8r2zuQoalhET,Tri-Valley Wheels,fixed-route,bus,Alameda,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+bc7bf11140c3425b4c192ed1ef3f37ba,reczIDDjN9IlXhkXo,Trinity Transit,fixed-route,bus,Trinity,true,Yes,true,true,Operating,2026-08-14 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4395ad6317bddd27ea96d38873c0b0cb,recnj78A0fLYMrtUP,Tulare County Regional Transit Agency,"ADA paratransit, deviated fixed-route, fixed-route",bus,Tulare,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+56f396fb9c8a80b04190cad7ec4c7f93,recEdI3fq7u0du3ad,Tulare County Regional Transit Agency On-Demand / Microtransit,on-demand,bus,Tulare,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+4dc2c38e39867fca7c851085a468ef0b,rec6EiCRmsaVIrpS4,Tuolumne County Dial-Your-Ride,"reservations, on-demand",bus,Tuolumne,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+5ba4df34375c5c688cc41cc9afbd6aaf,rec9thmtC83JK3wLV,Tuolumne County Transit,"deviated fixed-route, reservations",bus,Tuolumne,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+f0981d8f2ac613f557992913223b4639,recg6A3KQouTILiBp,Turlock Transit,fixed-route,bus,Stanislaus,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+7b9fbecc6eae6200ea245f133207b051,recKfOaE92EQuij3P,Union City Flea,"ADA paratransit, on-demand",bus,Alameda,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+78ec810eedf92e4211c589ee90c86530,recQV1huZPdkbdFAw,Union City Transit,fixed-route,bus,Alameda,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b80dd39bc813a593377772e2bb4c0b8d,rec0NVDERfqlUEB3t,Unitrans,fixed-route,bus,Yolo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a44522ad78e9a02208e1e3842572dacb,recWua4c6VupzdPxD,VCTC Intercity,fixed-route,bus,Ventura,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b6e564acf5642669a470cc8db7165345,recmZDxRb8f3JSb16,VTA Light Rail,fixed-route,light rail,Santa Clara,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+b61af2e905d8f6f035e96a1933d65ed6,recRfTMR2DrbO0UgW,Valley Express Dial-A-Ride,"on-demand, ADA paratransit, reservations",bus,Ventura,,Yes,true,false,Operating,2026-08-10 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+58361f610a2ce2ac9264cf22b7607806,reczMQumxOsVYoG2f,Victor Valley Transit,fixed-route,bus,San Bernardino,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+96bb83342892a17fc95b470fdbebbea3,rec7BAUVC9Sm7g9X8,Vine Transit,fixed-route,bus,Napa,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+1b3c4372507bac4a19c00a0f9df97e21,recoNmbuZidl46edp,Vine Transit Community Shuttles,"","","",,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+a4c6cc8fc0a856002a6cc4db69012407,recJihCliN0sumN4a,Visalia Dial-A-Ride,"ADA paratransit, on-demand, reservations",bus,Tulare,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+524bd9009ab565a44114574694ba2d22,rec4S4ac9qSXaMoTw,Visalia Transit,fixed-route,bus,Tulare,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+254cc378632cbce5cc3ab372bbfde7a2,recfv4Z4dQvWv3YPh,WeHo Shuttles,fixed-route,trolley/streetcar,Los Angeles,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+332f9d8e6bc1b48f0086b2d2dc4b9934,recVPttIXLsUDujRB,Western Contra Costa Transit Authority,fixed-route,bus,Contra Costa,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+62a4a134230c6dbf72abe9914de08842,recUpOEFlHrFEURli,Yolobus,"fixed-route, deviated fixed-route",bus,Yolo,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+fd344331094856e9cf559b89b0a5c212,recCiEyWpGm6cPqRn,Yuba-Sutter Transit,fixed-route,bus,Yuba,true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+793b5861b8bc1afac2d7a28fab36caf5,recO9CBWSHIq7b3Gn,eTrans,fixed-route,bus,"Stanislaus, San Joaquin",true,Yes,true,true,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true
+9b5a5ec35c106d6afe7de2caa1b9ed51,rec77IN3p6yzhb68T,eTrans Dial-A-Ride,"ADA paratransit, on-demand, reservations",bus,Stanislaus,,Yes,true,false,Operating,2026-08-03 00:00:00 UTC,2098-12-31 23:59:59.999999 UTC,true

@@ -1,0 +1,240 @@
+{
+  "profile": "tabular-data-package",
+  "name": "tides_organizations_latest",
+  "title": "tides_organizations_latest",
+  "description": "Current-version cut of tides_organizations (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest\norganization reference snapshot.\n",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Cal-ITP / Caltrans Data & Digital Services",
+      "email": "hello@calitp.org",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "data_000000000000-csv",
+      "path": "data_000000000000.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per organization version."
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the organization. Join key from the\nTIDES facts' `organization_source_record_id`.\n"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Organization name."
+          },
+          {
+            "name": "organization_type",
+            "type": "string",
+            "description": "Type of organization (e.g. city/town, county, independent agency, JPA)."
+          },
+          {
+            "name": "website",
+            "type": "string",
+            "description": "Organization website URL."
+          },
+          {
+            "name": "is_public_entity",
+            "type": "boolean",
+            "description": "Whether the organization is a public entity."
+          },
+          {
+            "name": "ntd_id",
+            "type": "string",
+            "description": "National Transit Database ID of the organization."
+          },
+          {
+            "name": "ntd_agency_info_key",
+            "type": "string",
+            "description": "Key to NTD agency information for this organization."
+          },
+          {
+            "name": "ntd_id_2022",
+            "type": "string",
+            "description": "2022-era National Transit Database ID, where it differs from `ntd_id`."
+          },
+          {
+            "name": "rtpa_key",
+            "type": "string",
+            "description": "Key of the Regional Transportation Planning Agency this organization belongs to."
+          },
+          {
+            "name": "rtpa_name",
+            "type": "string",
+            "description": "Name of the Regional Transportation Planning Agency this organization belongs to."
+          },
+          {
+            "name": "mpo_key",
+            "type": "string",
+            "description": "Key of the Metropolitan Planning Organization this organization belongs to."
+          },
+          {
+            "name": "mpo_name",
+            "type": "string",
+            "description": "Name of the Metropolitan Planning Organization this organization belongs to."
+          },
+          {
+            "name": "public_currently_operating",
+            "type": "boolean",
+            "description": "Whether the organization currently operates public transit service."
+          },
+          {
+            "name": "public_currently_operating_fixed_route",
+            "type": "boolean",
+            "description": "Whether the organization currently operates public fixed-route transit service."
+          },
+          {
+            "name": "caltrans_district",
+            "type": "integer",
+            "description": "Caltrans district number of the organization's headquarters county."
+          },
+          {
+            "name": "caltrans_district_name",
+            "type": "string",
+            "description": "Caltrans district name of the organization's headquarters county."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    },
+    {
+      "name": "data_000000000000-parquet",
+      "path": "data_000000000000.parquet",
+      "format": "parquet",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per organization version."
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the organization. Join key from the\nTIDES facts' `organization_source_record_id`.\n"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Organization name."
+          },
+          {
+            "name": "organization_type",
+            "type": "string",
+            "description": "Type of organization (e.g. city/town, county, independent agency, JPA)."
+          },
+          {
+            "name": "website",
+            "type": "string",
+            "description": "Organization website URL."
+          },
+          {
+            "name": "is_public_entity",
+            "type": "boolean",
+            "description": "Whether the organization is a public entity."
+          },
+          {
+            "name": "ntd_id",
+            "type": "string",
+            "description": "National Transit Database ID of the organization."
+          },
+          {
+            "name": "ntd_agency_info_key",
+            "type": "string",
+            "description": "Key to NTD agency information for this organization."
+          },
+          {
+            "name": "ntd_id_2022",
+            "type": "string",
+            "description": "2022-era National Transit Database ID, where it differs from `ntd_id`."
+          },
+          {
+            "name": "rtpa_key",
+            "type": "string",
+            "description": "Key of the Regional Transportation Planning Agency this organization belongs to."
+          },
+          {
+            "name": "rtpa_name",
+            "type": "string",
+            "description": "Name of the Regional Transportation Planning Agency this organization belongs to."
+          },
+          {
+            "name": "mpo_key",
+            "type": "string",
+            "description": "Key of the Metropolitan Planning Organization this organization belongs to."
+          },
+          {
+            "name": "mpo_name",
+            "type": "string",
+            "description": "Name of the Metropolitan Planning Organization this organization belongs to."
+          },
+          {
+            "name": "public_currently_operating",
+            "type": "boolean",
+            "description": "Whether the organization currently operates public transit service."
+          },
+          {
+            "name": "public_currently_operating_fixed_route",
+            "type": "boolean",
+            "description": "Whether the organization currently operates public fixed-route transit service."
+          },
+          {
+            "name": "caltrans_district",
+            "type": "integer",
+            "description": "Caltrans district number of the organization's headquarters county."
+          },
+          {
+            "name": "caltrans_district_name",
+            "type": "string",
+            "description": "Caltrans district name of the organization's headquarters county."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    }
+  ]
+}

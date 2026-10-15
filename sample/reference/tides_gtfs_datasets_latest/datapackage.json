@@ -1,0 +1,170 @@
+{
+  "profile": "tabular-data-package",
+  "name": "tides_gtfs_datasets_latest",
+  "title": "tides_gtfs_datasets_latest",
+  "description": "Current-version cut of tides_gtfs_datasets (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest feed\nreference snapshot.\n",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Cal-ITP / Caltrans Data & Digital Services",
+      "email": "hello@calitp.org",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "data_000000000000-csv",
+      "path": "data_000000000000.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per dataset version. Matches the\n`gtfs_dataset_key` carried on the TIDES facts and the\n*_gtfs_dataset_key columns on tides_provider_gtfs_data.\n"
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the GTFS dataset."
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "GTFS dataset name."
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Feed type (schedule, vehicle_positions, trip_updates, service_alerts)."
+          },
+          {
+            "name": "regional_feed_type",
+            "type": "string",
+            "description": "Type of regional feed relationship, if any."
+          },
+          {
+            "name": "base64_url",
+            "type": "string",
+            "description": "URL-safe base64 encoding of the feed URL, with authentication query\nparameters stripped before encoding. Matches the `base64_url`\ncarried on the TIDES facts.\n"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Decoded feed URL (convenience decode of `base64_url`)."
+          },
+          {
+            "name": "has_authentication",
+            "type": "boolean",
+            "description": "Whether the feed requires authentication to download."
+          },
+          {
+            "name": "authentication_contact_details",
+            "type": "string",
+            "description": "Contact details for requesting feed authentication credentials."
+          },
+          {
+            "name": "deprecated_date",
+            "type": "date",
+            "description": "Date the dataset was deprecated, if any. Historical versions of\ndeprecated feeds are retained so past service dates stay resolvable.\n"
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    },
+    {
+      "name": "data_000000000000-parquet",
+      "path": "data_000000000000.parquet",
+      "format": "parquet",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per dataset version. Matches the\n`gtfs_dataset_key` carried on the TIDES facts and the\n*_gtfs_dataset_key columns on tides_provider_gtfs_data.\n"
+          },
+          {
+            "name": "source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the GTFS dataset."
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "GTFS dataset name."
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Feed type (schedule, vehicle_positions, trip_updates, service_alerts)."
+          },
+          {
+            "name": "regional_feed_type",
+            "type": "string",
+            "description": "Type of regional feed relationship, if any."
+          },
+          {
+            "name": "base64_url",
+            "type": "string",
+            "description": "URL-safe base64 encoding of the feed URL, with authentication query\nparameters stripped before encoding. Matches the `base64_url`\ncarried on the TIDES facts.\n"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Decoded feed URL (convenience decode of `base64_url`)."
+          },
+          {
+            "name": "has_authentication",
+            "type": "boolean",
+            "description": "Whether the feed requires authentication to download."
+          },
+          {
+            "name": "authentication_contact_details",
+            "type": "string",
+            "description": "Contact details for requesting feed authentication credentials."
+          },
+          {
+            "name": "deprecated_date",
+            "type": "date",
+            "description": "Date the dataset was deprecated, if any. Historical versions of\ndeprecated feeds are retained so past service dates stay resolvable.\n"
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    }
+  ]
+}
