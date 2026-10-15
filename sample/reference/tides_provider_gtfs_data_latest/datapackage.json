@@ -1,0 +1,290 @@
+{
+  "profile": "tabular-data-package",
+  "name": "tides_provider_gtfs_data_latest",
+  "title": "tides_provider_gtfs_data_latest",
+  "description": "Current-version cut of tides_provider_gtfs_data (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest\norganization <-> feed crosswalk snapshot.\n",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Cal-ITP / Caltrans Data & Digital Services",
+      "email": "hello@calitp.org",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "data_000000000000-csv",
+      "path": "data_000000000000.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per record version."
+          },
+          {
+            "name": "organization_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the organization. Join key from the\nTIDES facts' `organization_source_record_id`.\n"
+          },
+          {
+            "name": "organization_name",
+            "type": "string",
+            "description": "Organization name."
+          },
+          {
+            "name": "organization_ntd_id",
+            "type": "string",
+            "description": "National Transit Database ID of the organization."
+          },
+          {
+            "name": "service_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service. Joins to\ntides_services.source_record_id.\n"
+          },
+          {
+            "name": "service_name",
+            "type": "string",
+            "description": "Service name."
+          },
+          {
+            "name": "gtfs_service_data_customer_facing",
+            "type": "boolean",
+            "description": "Whether the GTFS service data relationship is customer facing."
+          },
+          {
+            "name": "regional_feed_type",
+            "type": "string",
+            "description": "Type of regional feed relationship, if any (e.g. Combined Regional Feed)."
+          },
+          {
+            "name": "public_customer_facing_fixed_route",
+            "type": "boolean",
+            "description": "Whether this record is public, customer-facing, fixed-route service."
+          },
+          {
+            "name": "public_customer_facing_or_regional_subfeed_fixed_route",
+            "type": "boolean",
+            "description": "Whether this record is public fixed-route service that is either\ncustomer-facing or a regional subfeed. This is the eligibility flag\nused to select feeds for TIDES publication.\n"
+          },
+          {
+            "name": "schedule_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the schedule GTFS dataset."
+          },
+          {
+            "name": "schedule_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the schedule GTFS dataset."
+          },
+          {
+            "name": "schedule_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the schedule GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "service_alerts_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service alerts GTFS dataset."
+          },
+          {
+            "name": "service_alerts_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the service alerts GTFS dataset."
+          },
+          {
+            "name": "service_alerts_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the service alerts GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "vehicle_positions_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the vehicle positions GTFS dataset."
+          },
+          {
+            "name": "vehicle_positions_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the vehicle positions GTFS dataset."
+          },
+          {
+            "name": "vehicle_positions_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the vehicle positions GTFS dataset; joins to\ntides_gtfs_datasets.key and matches the `gtfs_dataset_key` carried\non the TIDES facts.\n"
+          },
+          {
+            "name": "trip_updates_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the trip updates GTFS dataset."
+          },
+          {
+            "name": "trip_updates_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the trip updates GTFS dataset."
+          },
+          {
+            "name": "trip_updates_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the trip updates GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    },
+    {
+      "name": "data_000000000000-parquet",
+      "path": "data_000000000000.parquet",
+      "format": "parquet",
+      "schema": {
+        "fields": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Synthetic version surrogate; unique per record version."
+          },
+          {
+            "name": "organization_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the organization. Join key from the\nTIDES facts' `organization_source_record_id`.\n"
+          },
+          {
+            "name": "organization_name",
+            "type": "string",
+            "description": "Organization name."
+          },
+          {
+            "name": "organization_ntd_id",
+            "type": "string",
+            "description": "National Transit Database ID of the organization."
+          },
+          {
+            "name": "service_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service. Joins to\ntides_services.source_record_id.\n"
+          },
+          {
+            "name": "service_name",
+            "type": "string",
+            "description": "Service name."
+          },
+          {
+            "name": "gtfs_service_data_customer_facing",
+            "type": "boolean",
+            "description": "Whether the GTFS service data relationship is customer facing."
+          },
+          {
+            "name": "regional_feed_type",
+            "type": "string",
+            "description": "Type of regional feed relationship, if any (e.g. Combined Regional Feed)."
+          },
+          {
+            "name": "public_customer_facing_fixed_route",
+            "type": "boolean",
+            "description": "Whether this record is public, customer-facing, fixed-route service."
+          },
+          {
+            "name": "public_customer_facing_or_regional_subfeed_fixed_route",
+            "type": "boolean",
+            "description": "Whether this record is public fixed-route service that is either\ncustomer-facing or a regional subfeed. This is the eligibility flag\nused to select feeds for TIDES publication.\n"
+          },
+          {
+            "name": "schedule_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the schedule GTFS dataset."
+          },
+          {
+            "name": "schedule_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the schedule GTFS dataset."
+          },
+          {
+            "name": "schedule_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the schedule GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "service_alerts_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the service alerts GTFS dataset."
+          },
+          {
+            "name": "service_alerts_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the service alerts GTFS dataset."
+          },
+          {
+            "name": "service_alerts_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the service alerts GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "vehicle_positions_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the vehicle positions GTFS dataset."
+          },
+          {
+            "name": "vehicle_positions_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the vehicle positions GTFS dataset."
+          },
+          {
+            "name": "vehicle_positions_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the vehicle positions GTFS dataset; joins to\ntides_gtfs_datasets.key and matches the `gtfs_dataset_key` carried\non the TIDES facts.\n"
+          },
+          {
+            "name": "trip_updates_source_record_id",
+            "type": "string",
+            "description": "Airtable source record ID of the trip updates GTFS dataset."
+          },
+          {
+            "name": "trip_updates_gtfs_dataset_name",
+            "type": "string",
+            "description": "Name of the trip updates GTFS dataset."
+          },
+          {
+            "name": "trip_updates_gtfs_dataset_key",
+            "type": "string",
+            "description": "Version surrogate of the trip updates GTFS dataset; joins to tides_gtfs_datasets.key."
+          },
+          {
+            "name": "_valid_from",
+            "type": "datetime",
+            "description": "Timestamp from which this record version is valid (inclusive)."
+          },
+          {
+            "name": "_valid_to",
+            "type": "datetime",
+            "description": "Timestamp until which this record version is valid."
+          },
+          {
+            "name": "_is_current",
+            "type": "boolean",
+            "description": "Whether this is the current version of the record."
+          }
+        ]
+      }
+    }
+  ]
+}

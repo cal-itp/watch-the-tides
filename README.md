@@ -1,98 +1,116 @@
 # watch-the-tides
 
-A small, self-contained example of pulling [TIDES](https://tides-transit.org) transit data from
-Cal-ITP's public `gs://calitp-tides` bucket and visualizing it. It downloads one service day of
-`vehicle_locations` for **LA Metro Bus** and **LA Metro Rail**, then produces:
+A guide to Cal-ITP's public **TIDES** bucket, `gs://calitp-tides` — what's in it, how
+it's laid out, and how to pull it — plus a small worked example that pulls one day of
+vehicle positions and animates it.
 
-- `outputs/vehicle_animation.html` — an interactive map where vehicles move along their routes over
-  time, colored to match GTFS (rail by line, bus by service type).
-- `outputs/all_bus_routes_map.html` — a static map of **every** bus route that ran that day, one
-  representative track each, in its own color (see [Why the animation shows only some routes](#why-the-animation-shows-only-some-routes)).
-- `outputs/pings_per_hour.png` — a service-profile chart of pings per hour.
+- **Just want to see it?** The live animation is at
+  **https://docs.calitp.org/watch-the-tides/** (no setup).
+- **Want to run the example?** See **[RUNNING.md](RUNNING.md)**. You can run it on the
+  committed [`sample/`](sample/) with **no Google Cloud account**
+  ([Path A](RUNNING.md#path-a--run-on-the-committed-sample-no-gcp)), or pull a full day
+  yourself ([Path B](RUNNING.md#path-b--pull-the-full-day-from-the-bucket)).
+- **Want to understand the data?** Keep reading.
 
-It's meant as a starting point if you want to work with Cal-ITP's TIDES data yourself.
+## What is TIDES, and what's in this bucket?
 
-**▶ See it live:** https://docs.calitp.org/watch-the-tides/ — interactive animation + chart, no setup needed.
+[**TIDES**](https://tides-transit.org) (Transit Integrated Data Exchange Specification)
+is an open, community-governed standard for *historical* transit operations data —
+where vehicles actually went, which trips actually ran, and so on.
 
-## The one thing to know: requester-pays
+`gs://calitp-tides` is Cal-ITP's public, TIDES-shaped rendering of that data for
+**California transit agencies**. It is produced from Cal-ITP's nightly GTFS-Realtime
+archive and refreshed by two Airflow DAGs in
+[`cal-itp/data-infra`](https://github.com/cal-itp/data-infra):
 
-`gs://calitp-tides` is a **requester-pays** bucket. Every request must be billed to a Google Cloud
-project **you** own — you pay the egress (pennies for this sample). There is no anonymous download,
-and the browser/Console download button is unreliable for these buckets. Use the CLI/API with a
-billing project. See Google's docs:
+| DAG | cadence | writes |
+|-----|---------|--------|
+| [`generate_tides`](https://github.com/cal-itp/data-infra/blob/main/airflow/dags/generate_tides.py) | Mon & Thu | the **fact** tables (`vehicle_locations/`, `trips_performed/`) |
+| [`publish_tides_reference`](https://github.com/cal-itp/data-infra/blob/main/airflow/dags/publish_tides_reference.py) | Mondays | the **reference** tables (`reference/`) and **machine-readable metadata** (`datapackage.json`, `metadata/data.json`) |
 
-- [Use Requester Pays](https://docs.cloud.google.com/storage/docs/using-requester-pays)
-- [Requester Pays overview](https://docs.cloud.google.com/storage/docs/requester-pays) — requests without a billing project fail with `400 UserProjectMissing`.
+It is not LA Metro–only — the facts span every eligible California agency
+publishing GTFS-RT (120+ organizations as of this writing). The example in this repo
+just happens to pull LA Metro. Everything is published under
+[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
-```bash
-# the core idea — bill the request to your own project:
-gcloud storage cp "gs://calitp-tides/<path>" . --billing-project=YOUR_PROJECT
+## Bucket layout
+
+```
+gs://calitp-tides/
+├── vehicle_locations/        # FACT: GPS pings  (Mon & Thu DAG)
+│   └── organization_source_record_id=<org>/base64_url=<feed>/dt=<date>/data_*.parquet
+├── trips_performed/          # FACT: one row per trip actually operated
+│   └── organization_source_record_id=<org>/base64_url=<feed>/dt=<date>/data_*.parquet
+├── reference/                # crosswalk / naming tables that resolve the IDs above
+│   ├── tides_<table>_latest/ #   stable path, overwritten each run (current snapshot)
+│   │   ├── data_*.parquet
+│   │   ├── data_*.csv
+│   │   └── datapackage.json  #   Frictionless data dictionary for this table
+│   └── tides_<table>/dt=<date>/   # full history, one partition per run date
+├── metadata/
+│   └── data.json             # DCAT-US catalog describing every dataset above
+└── *_outcomes/               # per-run export logs (JSONL), partitioned by dt / ts
 ```
 
-## Setup
+Both fact tables are **hive-partitioned** by publishing organization, feed, and
+service date, so you can pull exactly one agency-feed-day (that's what
+[`download.py`](download.py) does).
 
-Requires [`uv`](https://docs.astral.sh/uv/) and the `gcloud` CLI.
+### The fact tables
+
+`vehicle_locations` (GPS pings) carries `latitude`, `longitude`, `event_timestamp`,
+`vehicle_id`, `trip_id_performed`, `trip_stop_sequence`, `stop_id`, `current_status`,
+`speed` (m/s), `heading`, `odometer`, plus the partition/identity columns
+`organization_source_record_id`, `base64_url`, `gtfs_dataset_key`, `service_date`.
+`trips_performed` summarizes the same operations one row per operated trip.
+
+Neither fact carries agency names or route info — those are **opaque IDs** you resolve
+with the reference tables.
+
+### The reference tables (resolving the IDs)
+
+The facts only carry IDs. The `reference/` tables turn them into something readable.
+Each is published both as a full history and as a `_latest` current snapshot, with a
+`datapackage.json` data dictionary:
+
+| reference table | resolves | to |
+|-----------------|----------|-----|
+| `tides_organizations` | `organization_source_record_id` | org name, type, NTD ID, Caltrans district, RTPA/MPO |
+| `tides_provider_gtfs_data` | an org | its schedule / vehicle-positions / trip-updates / service-alerts feeds (+ `gtfs_dataset_key`) |
+| `tides_gtfs_datasets` | `gtfs_dataset_key` / `base64_url` | feed name, type, decoded URL |
+| `tides_services` | `service_source_record_id` | service name, mode, operating counties |
+| `tides_agency` | a schedule feed's `base64_url` | GTFS `agency.txt` (agency name, URL, timezone…) |
+
+All are small — a copy of the `_latest` set (CSV + parquet + `datapackage.json`) is
+committed under [`sample/reference/`](sample/reference/) so you can browse them without
+touching GCP. These columns mirror what Cal-ITP already publishes to
+[data.ca.gov](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset), so the
+same joins work there too.
+
+### Machine-readable metadata
+
+`publish_tides_reference` emits standards-based metadata (per Caltrans SAM 5160.1) in
+the same run:
+
+- a **Frictionless** [`datapackage.json`](https://specs.frictionlessdata.io/data-package/)
+  next to every reference table — field names, types, and descriptions, sourced from
+  the dbt model docs.
+- a **DCAT-US** [`metadata/data.json`](https://resources.data.gov/resources/dcat-us/)
+  catalog (Project Open Data v1.1) covering the reference tables **and** the fact
+  tables — the same catalog format data.ca.gov publishes.
+
+These are standard Frictionless packages, so `datapackage.json` doubles as a field
+dictionary (open it as JSON), and the data files validate with the same tooling TIDES
+uses:
 
 ```bash
-uv sync
-gcloud auth login                         # a Google account with a billing-enabled GCP project
-export TIDES_BILLING_PROJECT=your-project-id
+pip install frictionless
+frictionless validate sample/reference/tides_gtfs_datasets_latest/data_000000000000.csv
 ```
 
-## Run
+## Reading a bucket path
 
-```bash
-uv run python download.py     # -> data/la_metro_{bus,rail}_<date>.parquet  (requester-pays download)
-uv run python animate.py      # -> outputs/vehicle_animation.html
-uv run python all_routes_map.py  # -> outputs/all_bus_routes_map.html  (all bus routes that ran)
-uv run python charts.py       # -> outputs/pings_per_hour.png
-```
-
-Then open `outputs/vehicle_animation.html` and hit play.
-
-Optional tuning (env vars): `TIDES_DT` (service date), and for the animation `ANIM_START`/`ANIM_END`
-(window), `ANIM_INTERVAL_SEC`, `ANIM_MAX_VEHICLES`.
-
-## How it works
-
-| file | what |
-|------|------|
-| `config.py` | billing project (from `TIDES_BILLING_PROJECT`), service date, the two LA Metro feeds, colors |
-| `download.py` | pulls one day of each feed from the requester-pays bucket via `gcloud storage` |
-| `gtfs_colors.py` | maps vehicles to GTFS colors by joining `trip_id` to LA Metro GTFS |
-| `animate.py` | time-animated folium map of moving vehicles |
-| `all_routes_map.py` | static map of every bus route that operated, one representative track each |
-| `charts.py` | pings-per-hour chart |
-
-### A note on GTFS colors
-
-TIDES `vehicle_locations` carries `trip_id_performed` but no route, so to color vehicles we join to
-LA Metro's GTFS (`trip_id → route_id → route_color`). LA Metro regenerates its GTFS frequently and
-**reassigns trip IDs**, so `gtfs_colors.py` fetches the GTFS commit **effective on the service date**
-from GitLab — otherwise the IDs don't line up. Rail uses the GTFS line color; buses are colored by
-service type (Local / Rapid / Express / Limited / BRT).
-
-## Why the animation shows only some routes
-
-The animation isn't the whole picture. `animate.py` deliberately limits how much it renders (so the
-file stays light and playable), so it surfaces only a fraction of the bus network. That's a
-*rendering* cap, not a data gap — `download.py` already pulls every shard, and the downloaded data
-covers nearly all routes that operated.
-
-To see the full network, run `all_routes_map.py`, which draws one representative track per route.
-
-### A note on the parquet shards
-
-Each `dt=<date>/` partition holds several `data_*.parquet` shards. Their sizes vary, but **not** by
-route — BigQuery's export splits a partition into roughly **equal-sized** files (e.g. eight ~13 MB
-shards for one bus day), and each shard is an arbitrary slice of rows that already contains *all*
-routes. So bigger feeds/busier days just get *more* equal-sized shards: **LA Metro bus** (~1,680
-vehicles, 2.2M pings/day) lands ~8 shards ≈ 100 MB, while **LA Metro rail** (small fleet) is a single
-~8 MB shard. Size tracks data volume (fleet size × how busy the day was), never which routes ran.
-
-## Reading the bucket path (organization & feed IDs)
-
-A bucket path looks like:
+A fact path looks like:
 
 ```
 gs://calitp-tides/vehicle_locations/
@@ -102,26 +120,13 @@ gs://calitp-tides/vehicle_locations/
   data_*.parquet
 ```
 
-Both IDs come from Cal-ITP's nightly GTFS-ingest metadata, published on the California Open Data
-Portal — you can look them up there:
+Resolve the two IDs with the reference tables above — `organization_source_record_id`
+in `tides_organizations`, `base64_url` in `tides_gtfs_datasets`. (They also resolve in
+the equivalent data.ca.gov tables:
+[`provider_gtfs_data`](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset/resource/ebe116fb-b9da-4fee-a0c5-497c9d6d61d7),
+[`gtfs_datasets`](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset/resource/e4ca5bd4-e9ce-40aa-a58a-3a6d78b042bd).)
 
-- **`organization_source_record_id`** → the publishing agency. Resolve it in
-  [`provider_gtfs_data`](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset/resource/ebe116fb-b9da-4fee-a0c5-497c9d6d61d7)
-  via its `organization_source_record_id` / `organization_name` columns (that table also lists each
-  org's schedule / vehicle-positions / trip-updates / alerts feeds).
-- **`base64_url`** → the specific feed. It's just the feed URL `base64`-encoded
-  (`base64.urlsafe_b64decode`), and you can also resolve it in
-  [`gtfs_datasets`](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset/resource/e4ca5bd4-e9ce-40aa-a58a-3a6d78b042bd)
-  via its `base64_url` → `name` / `type` / `url` columns.
-
-The two feeds this example uses (same organization, two separate vehicle-position feeds):
-
-| organization_source_record_id | organization_name | base64_url (decoded) | feed name | type |
-|---|---|---|---|---|
-| `recPnGkwdpnr8jmHB` | Los Angeles County Metropolitan Transportation Authority | `https://api.goswift.ly/real-time/lametro/gtfs-rt-vehicle-positions` | LA Metro Bus Vehicle Positions | vehicle_positions |
-| `recPnGkwdpnr8jmHB` | Los Angeles County Metropolitan Transportation Authority | `https://api.goswift.ly/real-time/lametro-rail/gtfs-rt-vehicle-positions` | LA Metro Rail Vehicle Positions | vehicle_positions |
-
-Decode any `base64_url` yourself:
+`base64_url` is just the feed URL `base64`-encoded — decode it yourself:
 
 ```python
 import base64
@@ -129,8 +134,58 @@ base64.urlsafe_b64decode("aHR0cHM6Ly9hcGku…dmVoaWNsZS1wb3NpdGlvbnM=" + "===").
 # -> https://api.goswift.ly/real-time/lametro/gtfs-rt-vehicle-positions
 ```
 
-## The data
+The two feeds the example pulls (same organization, two separate vehicle-position feeds):
 
-TIDES `vehicle_locations` (GPS pings): `latitude`, `longitude`, `event_timestamp`, `vehicle_id`,
-`trip_id_performed`, `speed` (m/s), `heading`, `stop_id`, `current_status`, and more. Browse the
-bucket layout at `gs://calitp-tides/vehicle_locations/.../dt=YYYY-MM-DD/`.
+| organization_source_record_id | organization_name | base64_url (decoded) | feed name |
+|---|---|---|---|
+| `recPnGkwdpnr8jmHB` | Los Angeles County Metropolitan Transportation Authority | `https://api.goswift.ly/real-time/lametro/gtfs-rt-vehicle-positions` | LA Metro Bus Vehicle Positions |
+| `recPnGkwdpnr8jmHB` | Los Angeles County Metropolitan Transportation Authority | `https://api.goswift.ly/real-time/lametro-rail/gtfs-rt-vehicle-positions` | LA Metro Rail Vehicle Positions |
+
+## Requester-pays: how to access the bucket
+
+`gs://calitp-tides` is a **requester-pays** bucket. Every request must be billed to a
+Google Cloud project **you** own — you pay the egress (pennies for a day or two of
+data). There is no anonymous download, and the browser/Console download button is
+unreliable for these buckets, so use the CLI or API with a billing project. See
+Google's [Use Requester Pays](https://docs.cloud.google.com/storage/docs/using-requester-pays)
+(requests without a billing project fail with `400 UserProjectMissing`).
+
+```bash
+# gcloud CLI (what download.py uses) — bill the request to your own project:
+gcloud storage cp "gs://calitp-tides/<path>" . --billing-project=YOUR_PROJECT
+```
+
+```python
+# Python client — note user_project, and that it uses ADC, not `gcloud auth login`:
+#   gcloud auth application-default login
+from google.cloud import storage
+client = storage.Client()
+bucket = client.bucket("calitp-tides", user_project="YOUR_PROJECT")
+bucket.blob("metadata/data.json").download_to_filename("data.json")
+```
+
+**No GCP account?** The [`sample/`](sample/) directory has a real (small) slice of the
+bucket committed to the repo — enough to run the demo and inspect the reference data
+and metadata. See [RUNNING.md Path A](RUNNING.md#path-a--run-on-the-committed-sample-no-gcp).
+
+## Running the example
+
+See **[RUNNING.md](RUNNING.md)** for setup, the two run paths, tunables, and how the
+scripts work. In short, it downloads one day of LA Metro bus + rail `vehicle_locations`
+and produces an animated map, an all-routes map, and a pings-per-hour chart.
+
+## The TIDES ecosystem
+
+- **The spec & its tooling** — [tides-transit.org](https://tides-transit.org) and
+  [`TIDES-transit/TIDES`](https://github.com/TIDES-transit/TIDES). TIDES is built on
+  [Frictionless](https://frictionlessdata.io/), so the `datapackage.json` files in this
+  bucket are Frictionless data packages you can read and validate with `frictionless`
+  (or the scripts in the spec's `/bin`).
+- **Other implementations** — [`TIDES-transit/tides-implementations`](https://github.com/TIDES-transit/tides-implementations)
+  collects TIDES implementations by agencies, vendors, and researchers. This bucket is
+  Cal-ITP's California implementation.
+- **The upstream pipeline** — the GTFS ingest metadata that resolves these IDs is also
+  published on the [California Open Data Portal](https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset).
+
+Know of a tool or group consuming `gs://calitp-tides` (an R/Python package, a research
+project)? Open an issue or PR and we'll list it here.

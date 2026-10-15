@@ -9,10 +9,14 @@ wheels/
 # Virtual environments
 .venv
 
-# Downloaded data + GTFS (large, regenerable, requester-pays)
+# Downloaded data + GTFS (large, regenerable, requester-pays).
+# The small committed slice lives in sample/ (tracked on purpose).
 data/
 gtfs/
 .ipynb_checkpoints/
+
+# Loose working decks (not part of the repo)
+*.pptx
 
 # Generated outputs: ignore all except the showcase artifacts
 outputs/*

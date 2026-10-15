@@ -36,7 +36,10 @@ FEEDS = {
     ),
 }
 
-DATA_DIR = "data"
+# Where the scripts read/write the per-feed parquet. Defaults to data/ (what
+# download.py fills). Point it at the committed sample for a no-GCP run:
+#   TIDES_DATA_DIR=sample uv run python animate.py
+DATA_DIR = os.environ.get("TIDES_DATA_DIR", "data")
 OUTPUT_DIR = "outputs"
 GTFS_DIR = "gtfs"
 

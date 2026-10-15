@@ -1,0 +1,464 @@
+{
+  "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+  "@type": "dcat:Catalog",
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "dataset": [
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_agency/",
+      "title": "tides_agency",
+      "description": "GTFS agency reference for the published TIDES dataset: every version of\nevery agency.txt row from the schedule feeds of member organizations.\nProvides the human-readable agency name behind a feed for any service\ndate (_valid_from <= service_date < _valid_to; validity comes from the\nschedule feed version, dim_schedule_feeds). Columns follow the set\nalready published to data.ca.gov for dim_agency_latest.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_agency/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_agency/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_agency_latest/",
+      "title": "tides_agency_latest",
+      "description": "Current-version cut of tides_agency (`WHERE _is_current`). Exported to\nthe TIDES bucket at a stable path as the latest agency reference\nsnapshot.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_agency_latest/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_agency_latest/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_gtfs_datasets/",
+      "title": "tides_gtfs_datasets",
+      "description": "GTFS dataset (feed) reference for the published TIDES dataset: every\nversion of every dataset referenced by a member organization's provider\nrecords or observed in the published facts. Resolves the\n`gtfs_dataset_key` / `base64_url` on vehicle_locations /\ntrips_performed to a named feed for any service date\n(_valid_from <= service_date < _valid_to). Columns follow the set\nalready published to data.ca.gov for dim_gtfs_datasets_latest.\n`private_dataset` records are excluded from all versions, as are specific\nhistorical feed versions whose URL carried an inline auth credential, so\nno feed key is published to the open-data bucket.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_gtfs_datasets/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_gtfs_datasets/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_gtfs_datasets_latest/",
+      "title": "tides_gtfs_datasets_latest",
+      "description": "Current-version cut of tides_gtfs_datasets (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest feed\nreference snapshot.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_gtfs_datasets_latest/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_gtfs_datasets_latest/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_organizations/",
+      "title": "tides_organizations",
+      "description": "Organization reference for the published TIDES dataset: every version of\nevery organization that appears in the TIDES facts. Resolves the\n`organization_source_record_id` on vehicle_locations / trips_performed\nto a human-readable organization for any service date\n(_valid_from <= service_date < _valid_to). Columns follow the set\nalready published to data.ca.gov for\ndim_organizations_latest_with_caltrans_district.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_organizations/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_organizations/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_organizations_latest/",
+      "title": "tides_organizations_latest",
+      "description": "Current-version cut of tides_organizations (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest\norganization reference snapshot.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_organizations_latest/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_organizations_latest/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_provider_gtfs_data/",
+      "title": "tides_provider_gtfs_data",
+      "description": "Organization <-> GTFS feed crosswalk for the published TIDES dataset:\nevery version of every provider record belonging to an organization that\nappears in the TIDES facts. Links an `organization_source_record_id` to\nthe organization's schedule / vehicle-positions / trip-updates /\nservice-alerts feeds for any service date\n(_valid_from <= service_date < _valid_to). Columns follow the set\nalready published to data.ca.gov for dim_provider_gtfs_data_latest, plus\nthe four *_gtfs_dataset_key columns so the facts' `gtfs_dataset_key`\njoins directly to tides_gtfs_datasets.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_provider_gtfs_data/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_provider_gtfs_data/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_provider_gtfs_data_latest/",
+      "title": "tides_provider_gtfs_data_latest",
+      "description": "Current-version cut of tides_provider_gtfs_data (`WHERE _is_current`).\nExported to the TIDES bucket at a stable path as the latest\norganization <-> feed crosswalk snapshot.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_provider_gtfs_data_latest/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_provider_gtfs_data_latest/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_services/",
+      "title": "tides_services",
+      "description": "Service reference for the published TIDES dataset: every version of\nevery service referenced by a member organization's provider records.\nGives the `service_source_record_id` on tides_provider_gtfs_data a\nhuman-readable service for any service date\n(_valid_from <= service_date < _valid_to). Columns follow the set\nalready published to data.ca.gov for dim_services_latest; array columns\nare flattened to comma-separated strings.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_services/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_services/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/reference/tides_services_latest/",
+      "title": "tides_services_latest",
+      "description": "Current-version cut of tides_services (`WHERE _is_current`). Exported to\nthe TIDES bucket at a stable path as the latest service reference\nsnapshot.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/reference/tides_services_latest/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "format": "csv",
+          "mediaType": "text/csv",
+          "accessURL": "gs://calitp-tides/reference/tides_services_latest/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/vehicle_locations/",
+      "title": "fct_tides_vehicle_locations",
+      "description": "Vehicle location pings reshaped to the TIDES (Transit Integrated Data\nExchange Specification) `vehicle_locations` schema\n(https://tides-transit.org/main/). Sourced from `fct_vehicle_locations`\nand filtered via `dim_provider_gtfs_data` to public, customer-facing or\nregional-subfeed fixed-route feeds.\nData available for the last 15 days.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/vehicle_locations/"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "identifier": "gs://calitp-tides/trips_performed/",
+      "title": "fct_tides_trips_performed",
+      "description": "Trips performed reshaped to the TIDES (Transit Integrated Data Exchange\nSpecification) `trips_performed` schema (https://tides-transit.org/main/).\nSourced from `fct_observed_trips`, joined to `fct_scheduled_trips` for\nroute metadata and to `fct_tides_vehicle_locations` for canonical\nvehicle_id per trip. Filtered upstream to `appeared_in_vp = TRUE` so\nevery row has a derivable vehicle_id.\nData available for the last 15 days.\n",
+      "keyword": [
+        "transit",
+        "TIDES",
+        "GTFS",
+        "California"
+      ],
+      "modified": "2026-10-06",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Caltrans"
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Cal-ITP / Caltrans Data & Digital Services",
+        "hasEmail": "mailto:hello@calitp.org"
+      },
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "Requester-pays Google Cloud Storage bucket; downloads are billed to the requester's GCP project.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "format": "parquet",
+          "mediaType": "application/vnd.apache.parquet",
+          "accessURL": "gs://calitp-tides/trips_performed/"
+        }
+      ]
+    }
+  ]
+}
